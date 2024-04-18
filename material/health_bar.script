@@ -29,7 +29,7 @@ function init(self)
 	self.hp_unit = (self.width / self.health) -- WIDTH / HP (IE: 200 / 50 = 4 units)
 
 	--
-	self.pos = go.get_position()
+	self.pos = go.get_world_position()
 	--
 	--go.set("#health", "value", self.health)
 	go.set("#health", "health", vmath.vector4(self.health * self.hp_unit))
